@@ -2,13 +2,13 @@
 // Документы в коллекции users
 [
   {
-    "_id": ObjectId("..."),
+    "_id": ,
     "login": "user1",
     "name": "User One",
     "email": "user1@example.com"
   },
   {
-    "_id": ObjectId("..."),
+    "_id": ,
     "login": "user2",
     "name": "User Two",
     "email": "user2@example.com"
@@ -19,16 +19,14 @@
 // Документы в коллекции messages
 [
   {
-    "_id": ObjectId("..."),
+    "_id": ,
     "login": "user1",
     "message": "Hello from User One",
-    "timestamp": ISODate("...")
   },
   {
-    "_id": ObjectId("..."),
+    "_id": ,
     "login": "user2",
     "message": "User Two's message",
-    "timestamp": ISODate("...")
   }
 ]
 
@@ -48,16 +46,15 @@ db.users.aggregate([
 ```
 ```json
 {
-  "_id": ObjectId("..."),
+  "_id": ,
   "login": "user1",
   "name": "User One",
   "email": "user1@example.com",
   "user_messages": [
     {
-      "_id": ObjectId("..."),
+      "_id": ,
       "login": "user1",
       "message": "Hello from User One",
-      "timestamp": ISODate("...")
     }
   ]
 }
